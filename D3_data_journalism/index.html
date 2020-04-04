@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>D3Times</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/d3Style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <h1>D3Times</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-md-9">
+        <div id="scatter">
+          <!-- We append our chart here. -->
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-md-12">
+        <div class="article">
+          <h2>Correlations Discovered Between Health Risks and Age, Income</h2>
+          <p style="font-style: italic;">This is an interactive tool - as you click any of the x or y axis links, 
+            the chart will update so that you can compare those two variables.
+          </p>
+          
+            <div id="poverty_healthcare" style="display: none;">
+              <h3 style="color: royalblue">Comparing "People in poverty" to "People who lack healthcare coverage"</h3>
+              <p>It's no surprise that individuals with lower incomes (such as those below the poverty line) also have 
+                a lower statistical probability of having healthcare coverage. With this graph, you can clearly see
+                that Texas is a "Lone Star State" in that it is the only state that has both a "high" percentage of its population
+                in poverty (17.2%) but also has the highest percentage of un-insured citizens in the country (24.9% - nearly 5 full percentage
+                points above the 2nd place Mississippi).
+              </p>
+            </div>
+              
+            <div id="poverty_obese" style="display: none;">
+              <h3 style="color: blueviolet">Comparing "People in poverty" to "People who are obese"</h3>
+              <p>It's no surprise that individuals with lower incomes (such as those below the poverty line) also have 
+                a lower statistical probability of having healthcare coverage. With this graph, you can clearly see
+                that Texas is a "Lone Star State" in that it is the only state that has both a "high" percentage of its population
+                in poverty (17.2%) but also has the highest percentage of un-insured citizens in the country (24.9% - nearly 5 full percentage
+                points above the 2nd place Mississippi).
+              </p>
+            </div>
+              
+            <div id="poverty_smokes" style="display: none;">
+              <h3 style="color: blueviolet">Comparing "People in poverty" to "People who smoke"</h3>
+              <p>It's no surprise that individuals with lower incomes (such as those below the poverty line) also have 
+                a lower statistical probability of having healthcare coverage. With this graph, you can clearly see
+                that Texas is a "Lone Star State" in that it is the only state that has both a "high" percentage of its population
+                in poverty (17.2%) but also has the highest percentage of un-insured citizens in the country (24.9% - nearly 5 full percentage
+                points above the 2nd place Mississippi).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer-->
+  <div id="footer">
+    <p>Scott Whigham</p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+
+</html>
